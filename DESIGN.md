@@ -61,4 +61,4 @@ Rules:
 
 - Logo: three rounded bars in the funnel colours, indented like lines of code (`src/components/Logo`). The favicon repeats it.
 - Menu links: 16px, weight 600.
-- Language switch: a toggle with RU on the left and EN on the right. It is a link to the other language version, styled as a switch: on click the knob slides over first, then the page changes. Hover only brightens the track.
+- Language switch: a toggle with RU on the left and EN on the right. It is a link to the other language version, styled as a switch: on click the knob slides over first, then the browser does a full load of the other language version (starts at the top). Hover only brightens the track.
