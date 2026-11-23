@@ -29,13 +29,12 @@
 
 .logo {
   @include focus-ring;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  border-radius: 6px;
 }
 
 .navigation {
   display: none;
-  gap: $space-6;
+  gap: $space-8;
   margin-left: auto;
 
   @include from-tablet {
@@ -46,7 +45,8 @@
 .navigationLink {
   @include focus-ring;
   color: $text-muted;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   transition: color 0.2s;
 
   &:hover {
@@ -55,23 +55,9 @@
 }
 
 .languageSwitch {
-  @include focus-ring;
   margin-left: auto;
-  padding: $space-1 $space-4;
-  border: 1px solid $line;
-  border-radius: $radius-pill;
-  font-size: 14px;
-  font-weight: 600;
-  transition:
-    border-color 0.2s,
-    background 0.2s;
-
-  &:hover {
-    border-color: $text-faint;
-    background: $surface;
-  }
 
   @include from-tablet {
-    margin-left: 0;
+    margin-left: $space-4;
   }
 }

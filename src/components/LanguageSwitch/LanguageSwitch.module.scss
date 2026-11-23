@@ -1,0 +1,65 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+$track-width: 40px;
+$track-height: 22px;
+$knob-size: 16px;
+$knob-offset: 3px;
+
+.switch {
+  @include focus-ring;
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  border-radius: $radius-pill;
+  font-size: 14px;
+  font-weight: 700;
+
+  // the knob slides over on hover, hinting where the click leads
+  &:hover .knob {
+    transform: translateX(calc(#{$track-width - $knob-size - $knob-offset * 2} / 2));
+  }
+
+  &[data-locale="en"] .knob {
+    transform: translateX($track-width - $knob-size - $knob-offset * 2);
+  }
+
+  &[data-locale="en"]:hover .knob {
+    transform: translateX(calc(#{$track-width - $knob-size - $knob-offset * 2} / 2));
+  }
+}
+
+.option {
+  color: $text-faint;
+  transition: color 0.2s;
+
+  &[data-active="true"] {
+    color: $text;
+  }
+}
+
+.track {
+  position: relative;
+  width: $track-width;
+  height: $track-height;
+  border: 1px solid $line;
+  border-radius: $radius-pill;
+  background: $surface-raised;
+}
+
+.knob {
+  position: absolute;
+  top: $knob-offset - 1px;
+  left: $knob-offset - 1px;
+  width: $knob-size;
+  height: $knob-size;
+  border-radius: 50%;
+  background: $text;
+  transition: transform 0.25s $ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .knob {
+    transition: none;
+  }
+}

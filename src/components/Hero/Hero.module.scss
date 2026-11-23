@@ -6,11 +6,11 @@
   display: grid;
   gap: $space-12;
   align-items: center;
-  padding-block: $space-16 $space-24;
+  padding-block: $space-12 $space-16;
 
   @include from-desktop {
     grid-template-columns: 1fr 1.15fr;
-    min-height: calc(100svh - #{$header-height});
+    min-height: calc(85svh - #{$header-height});
     padding-block: $space-16;
   }
 }

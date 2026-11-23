@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getLocale, type Dictionary } from "@/i18n/getDictionary";
-import { locales } from "@/i18n/config";
+import { Logo } from "@/components/Logo/Logo";
+import { LanguageSwitch } from "@/components/LanguageSwitch/LanguageSwitch";
 import styles from "./SiteHeader.module.scss";
 
 type SiteHeaderProps = {
@@ -9,7 +10,6 @@ type SiteHeaderProps = {
 
 export async function SiteHeader({ dictionary }: SiteHeaderProps) {
   const currentLocale = await getLocale();
-  const otherLocale = locales.find((locale) => locale !== currentLocale) ?? currentLocale;
 
   const navigationLinks = [
     { href: "#workflow", label: dictionary.workflow },
@@ -22,7 +22,7 @@ export async function SiteHeader({ dictionary }: SiteHeaderProps) {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href={`/${currentLocale}`} className={styles.logo} aria-label="Andrey Melnichuk">
-          AM
+          <Logo />
         </Link>
         <nav className={styles.navigation} aria-label="Main">
           {navigationLinks.map((link) => (
@@ -31,14 +31,9 @@ export async function SiteHeader({ dictionary }: SiteHeaderProps) {
             </a>
           ))}
         </nav>
-        <Link
-          href={`/${otherLocale}`}
-          hrefLang={otherLocale}
-          className={styles.languageSwitch}
-          aria-label={dictionary.switchLanguageLabel}
-        >
-          {dictionary.switchLanguage}
-        </Link>
+        <div className={styles.languageSwitch}>
+          <LanguageSwitch currentLocale={currentLocale} label={dictionary.switchLanguageLabel} />
+        </div>
       </div>
     </header>
   );

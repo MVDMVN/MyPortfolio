@@ -39,7 +39,7 @@ Rules:
 
 ## Shape and spacing
 
-- 4px spacing scale, sections 96px apart.
+- 4px spacing scale, sections 64px apart (128px between two section contents).
 - Cards: 16px radius, 1px border, no shadow. The hero log window is the only element with a shadow.
 - Buttons and chips are pills.
 
@@ -56,3 +56,9 @@ Rules:
 - camelCase for variables, arguments, functions, and CSS Module class names (`styles.stepTitle`).
 - SCSS variables and mixins use kebab-case, the standard SCSS style.
 - One folder per component: `Component.tsx` + `Component.module.scss`.
+
+## Logo and header
+
+- Logo: three rounded bars in the funnel colours, indented like lines of code (`src/components/Logo`). The favicon repeats it.
+- Menu links: 16px, weight 600.
+- Language switch: a toggle with RU on the left and EN on the right. It is a plain link to the other language version, styled as a switch.
