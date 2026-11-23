@@ -38,7 +38,7 @@
   border: 1px solid $line;
   border-radius: $radius-pill;
   font-size: 14px;
-  cursor: default;
+  cursor: pointer;
   transition: border-color 0.25s;
 
   // Funnel-gradient border on hover. A gradient can't be a border-color,
