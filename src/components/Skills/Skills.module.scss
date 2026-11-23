@@ -33,8 +33,37 @@
 }
 
 .item {
+  position: relative;
   padding: $space-1 $space-3;
   border: 1px solid $line;
   border-radius: $radius-pill;
   font-size: 14px;
+  cursor: default;
+  transition: border-color 0.25s;
+
+  // Funnel-gradient border on hover. A gradient can't be a border-color,
+  // so a pseudo-element paints the gradient and a mask cuts out everything but a 1px ring.
+  // Opacity on the pseudo-element gives a smooth fade that a gradient swap can't.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    border-radius: inherit;
+    background: $funnel-gradient;
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border-color: transparent;
+
+    &::before {
+      opacity: 1;
+    }
+  }
 }
