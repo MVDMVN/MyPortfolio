@@ -47,7 +47,7 @@ Rules:
 
 - Hero: the log window fades in, its lines appear one by one, once.
 - Sections: fade and rise 24px when they first enter the viewport, cards in a list are staggered by 80ms.
-- Hover: borders brighten, buttons and contact cards lift 1-2px, skill chips get a funnel-gradient border.
+- Hover: borders brighten, buttons and contact cards lift 1-2px, skill chips lift with a spring and get a funnel-gradient border, a press squeezes them and they bounce back.
 - `MotionConfig reducedMotion="user"` respects the OS "reduce motion" setting.
 - Nothing loops, nothing follows the scroll.
 
