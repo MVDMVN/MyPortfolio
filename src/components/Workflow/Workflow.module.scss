@@ -1,0 +1,75 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.section {
+  @include container;
+  padding-block: $space-24;
+}
+
+.steps {
+  display: grid;
+  gap: $space-4;
+
+  @include from-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include from-desktop {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.step {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-6;
+  transition:
+    border-color 0.25s,
+    transform 0.25s $ease-out;
+
+  &:hover {
+    border-color: $text-faint;
+  }
+
+  // desktop: 3 cards on the first row, 2 wider ones on the second
+  @include from-desktop {
+    grid-column: span 2;
+
+    &:nth-child(n + 4) {
+      grid-column: span 3;
+    }
+  }
+}
+
+.number {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: $text-faint;
+}
+
+.stepTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text {
+  flex-grow: 1;
+  color: $text-muted;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  margin-top: $space-2;
+}
+
+.tool {
+  padding: 2px $space-3;
+  border-radius: $radius-pill;
+  background: $surface-raised;
+  color: $text-muted;
+  font-size: 13px;
+}

@@ -1,0 +1,80 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.section {
+  @include container;
+  padding-block: $space-16 $space-24;
+}
+
+.panel {
+  @include card;
+  position: relative;
+  display: grid;
+  gap: $space-4;
+  overflow: hidden;
+  padding: $space-12 $space-6;
+
+  @include from-tablet {
+    padding: $space-16;
+  }
+
+  // funnel stripe along the top edge of the panel
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: $funnel-gradient;
+  }
+}
+
+.title {
+  max-width: 640px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  color: $text-muted;
+  font-size: 18px;
+}
+
+.links {
+  display: grid;
+  gap: $space-3;
+  margin-top: $space-4;
+
+  @include from-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.link {
+  @include focus-ring;
+  display: grid;
+  gap: 2px;
+  padding: $space-4;
+  border: 1px solid $line;
+  border-radius: 12px;
+  background: $surface-raised;
+  transition:
+    border-color 0.2s,
+    transform 0.2s $ease-out;
+
+  &:hover {
+    border-color: $text-faint;
+    transform: translateY(-2px);
+  }
+}
+
+.linkLabel {
+  @include label;
+  color: $text-faint;
+}
+
+.linkValue {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "Андрей Мельничук · Технический интегратор",
+    "description": "Технический интегратор с опытом фронтенда: офферы, трекеры Keitaro, Binom и AiO, S2S-постбеки, Facebook CAPI, отправка лидов в CRM."
+  },
+  "nav": {
+    "workflow": "Как работаю",
+    "experience": "Опыт",
+    "skills": "Навыки",
+    "contact": "Контакты",
+    "switchLanguage": "English",
+    "switchLanguageLabel": "Переключить на английский"
+  },
+  "hero": {
+    "eyebrow": "Technical Integrator · Одесса, удалёнка",
+    "title": "Технический интегратор с опытом фронтенда",
+    "lead": "Собираю офферы, настраиваю трекеры и постбеки, быстро разбираюсь в новых инструментах.",
+    "facts": ["В арбитраже с 2024 года, крипто-офферы", "Фронтенд с 2019 года: React, Next.js"],
+    "primaryAction": "Написать в Telegram",
+    "secondaryAction": "Скачать CV",
+    "logTitle": "postback.log · пример"
+  },
+  "workflow": {
+    "title": "От оффера до постбека",
+    "intro": "Что я беру на себя в связке и где это было в работе.",
+    "steps": [
+      {
+        "title": "Оффер",
+        "text": "Собираю страницу оффера сам или с помощью ИИ. Одна кодовая база на React может переключать логику и скрипты по UTM-меткам, и одно приложение обслуживает несколько офферов.",
+        "tools": ["React", "Next.js", "ИИ-инструменты"]
+      },
+      {
+        "title": "Трекер",
+        "text": "Подключаю оффер к Keitaro, Binom или AiO: кампании, офферы, распределение трафика, кастомные макросы и S2S-постбеки между трекером, сетью и рекламным кабинетом.",
+        "tools": ["Keitaro", "Binom", "AiO"]
+      },
+      {
+        "title": "Отправка лида",
+        "text": "Лид уходит туда, где он нужен: Meta Pixel и Conversions API с дедупликацией по event_id, конверсии Google Ads или CRM со своей бизнес-логикой.",
+        "tools": ["Meta Pixel", "CAPI", "Google Ads", "CRM"]
+      },
+      {
+        "title": "Поиск ошибок",
+        "text": "Когда цифры не сходятся, прохожу цепочку по шагам: DevTools в браузере, логи трекера, ответы на постбеки, проверка гео и клоаки в Octo Browser с прокси.",
+        "tools": ["DevTools", "Octo Browser", "Прокси"]
+      },
+      {
+        "title": "Новые инструменты",
+        "text": "Запускаю новый инструмент по документации. У AiO не было публичного API для рутины, поэтому я разобрал внутренний API через DevTools и написал скрипты для массовой загрузки вайтов и правил распределения.",
+        "tools": ["Документация API", "DevTools", "Скрипты"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Опыт",
+    "jobs": [
+      {
+        "company": "Арбитражная компания (NDA)",
+        "role": "Frontend & Integration Developer",
+        "period": "окт 2024 — сейчас",
+        "points": [
+          "Трекеры, S2S-постбеки, Facebook CAPI на VPS, отправка лидов в CRM",
+          "Подключение доменов к Cloudflare пачкой через скрипт: зона, A-запись, делегирование NS, SSL",
+          "Внутренний дашборд для команды и инструкции для баеров"
+        ]
+      },
+      {
+        "company": "StarNavi (MagicHow)",
+        "role": "React Developer",
+        "period": "дек 2022 — дек 2023",
+        "points": [
+          "Веб-приложение, которое превращает запись экрана в пошаговую инструкцию: Next.js, React Query, React Hook Form",
+          "Приложение на React Native для отдельного проекта"
+        ]
+      },
+      {
+        "company": "ASBIS (Breezy)",
+        "role": "Frontend Developer",
+        "period": "апр 2022 — дек 2022",
+        "points": ["Лендинги и вёрстка компонентов на Vue.js"]
+      },
+      {
+        "company": "Citrus.ua",
+        "role": "Frontend Developer",
+        "period": "окт 2019 — янв 2022",
+        "points": ["Компоненты в Storybook для React-версии магазина, промо-лендинги"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Навыки",
+    "groups": [
+      {
+        "title": "Трекинг и интеграции",
+        "items": ["Keitaro", "Binom", "AiO", "S2S-постбеки", "UTM", "Meta Pixel", "Facebook CAPI", "Конверсии Google Ads", "Интеграции с CRM"]
+      },
+      {
+        "title": "Инфраструктура",
+        "items": ["Домены", "Cloudflare DNS и SSL", "VPS", "Apache", "SSH", "Git"]
+      },
+      {
+        "title": "Фронтенд",
+        "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Query", "SCSS", "React Native"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ищу работу технического интегратора",
+    "text": "Удалённо или в Одессе. Быстрее всего отвечаю в Telegram.",
+    "telegram": "Telegram",
+    "email": "Почта",
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "© 2026 Андрей Мельничук"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "backHome": "На главную"
+  }
+}

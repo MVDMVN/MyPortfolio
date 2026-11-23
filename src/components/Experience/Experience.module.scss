@@ -1,0 +1,70 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.section {
+  @include container;
+  padding-block: $space-24;
+}
+
+.timeline {
+  display: grid;
+  border-top: 1px solid $line;
+}
+
+.job {
+  display: grid;
+  gap: $space-2 $space-8;
+  padding-block: $space-8;
+  border-bottom: 1px solid $line;
+
+  @include from-tablet {
+    grid-template-columns: 200px 1fr;
+  }
+
+  // the current job gets the "click" accent on its period
+  &:first-child .period {
+    color: $accent-click;
+  }
+}
+
+.period {
+  @include label;
+  color: $text-faint;
+  padding-top: 6px;
+}
+
+.details {
+  display: grid;
+  gap: $space-1;
+}
+
+.company {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.role {
+  color: $text-muted;
+}
+
+.points {
+  display: grid;
+  gap: $space-2;
+  margin-top: $space-3;
+}
+
+.point {
+  position: relative;
+  padding-left: $space-6;
+  color: $text-muted;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.75em;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background: $text-faint;
+  }
+}

@@ -1,0 +1,40 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.section {
+  @include container;
+  padding-block: $space-24;
+}
+
+.groups {
+  display: grid;
+  gap: $space-4;
+
+  @include from-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.group {
+  @include card;
+  padding: $space-6;
+}
+
+.groupTitle {
+  @include label;
+  margin-bottom: $space-4;
+  color: $text-muted;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
+
+.item {
+  padding: $space-1 $space-3;
+  border: 1px solid $line;
+  border-radius: $radius-pill;
+  font-size: 14px;
+}

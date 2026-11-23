@@ -1,0 +1,87 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.window {
+  @include card;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 13px;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-3 $space-4;
+  border-bottom: 1px solid $line;
+  background: $surface-raised;
+}
+
+// three window dots painted in the funnel colours
+.dots {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $accent-click;
+  box-shadow:
+    14px 0 0 $accent-lead,
+    28px 0 0 $accent-deposit;
+  margin-right: 28px;
+}
+
+.title {
+  color: $text-faint;
+}
+
+.lines {
+  display: grid;
+  gap: $space-3;
+  padding: $space-6 $space-4;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: $space-1 $space-3;
+
+  @include from-tablet {
+    grid-template-columns: 48px 1fr auto;
+  }
+}
+
+.method {
+  font-weight: 700;
+
+  &[data-stage="click"] {
+    color: $accent-click;
+  }
+
+  &[data-stage="lead"] {
+    color: $accent-lead;
+  }
+
+  &[data-stage="deposit"] {
+    color: $accent-deposit;
+  }
+}
+
+.request {
+  color: $text;
+  overflow-wrap: anywhere;
+
+  @include from-desktop {
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+}
+
+.result {
+  grid-column: 2;
+  color: $text-faint;
+
+  @include from-tablet {
+    grid-column: auto;
+  }
+}

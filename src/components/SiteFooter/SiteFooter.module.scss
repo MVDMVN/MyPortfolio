@@ -1,0 +1,9 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.footer {
+  @include container;
+  padding-block: $space-8 $space-12;
+  color: $text-faint;
+  font-size: 13px;
+}

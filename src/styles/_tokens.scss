@@ -1,0 +1,39 @@
+// Design tokens. Values come from DESIGN.md, change them there first.
+
+// Palette: graphite surfaces, one light text colour, three funnel accents
+$canvas: #0b0c0e;
+$surface: #16181c;
+$surface-raised: #1f2227;
+$line: #2a2e34;
+$text: #f2f3f5;
+$text-muted: #a3a9b3;
+$text-faint: #6e7581;
+
+// Funnel accents: click -> lead -> deposit
+$accent-click: #3d8bff;
+$accent-lead: #3ee07a;
+$accent-deposit: #ff6a3d;
+
+$funnel-gradient: linear-gradient(90deg, $accent-click 0%, $accent-lead 50%, $accent-deposit 100%);
+
+// Spacing scale, 4px base
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-6: 24px;
+$space-8: 32px;
+$space-12: 48px;
+$space-16: 64px;
+$space-24: 96px;
+
+$radius-card: 16px;
+$radius-pill: 999px;
+
+$content-width: 1120px;
+$header-height: 64px;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+$ease-out: cubic-bezier(0.22, 1, 0.36, 1);

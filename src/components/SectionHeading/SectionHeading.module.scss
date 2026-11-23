@@ -1,0 +1,30 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.heading {
+  display: grid;
+  gap: $space-3;
+  margin-bottom: $space-12;
+  max-width: 640px;
+
+  // thin funnel stripe above every section title
+  &::before {
+    content: "";
+    width: 48px;
+    height: 3px;
+    border-radius: $radius-pill;
+    background: $funnel-gradient;
+  }
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.intro {
+  color: $text-muted;
+  font-size: 18px;
+}
