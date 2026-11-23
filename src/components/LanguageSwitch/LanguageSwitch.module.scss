@@ -15,17 +15,13 @@ $knob-offset: 3px;
   font-size: 14px;
   font-weight: 700;
 
-  // the knob slides over on hover, hinting where the click leads
-  &:hover .knob {
-    transform: translateX(calc(#{$track-width - $knob-size - $knob-offset * 2} / 2));
+  // hover only brightens the track; the knob moves on click, like a real switch
+  &:hover .track {
+    border-color: $text-faint;
   }
 
   &[data-locale="en"] .knob {
     transform: translateX($track-width - $knob-size - $knob-offset * 2);
-  }
-
-  &[data-locale="en"]:hover .knob {
-    transform: translateX(calc(#{$track-width - $knob-size - $knob-offset * 2} / 2));
   }
 }
 
@@ -45,6 +41,7 @@ $knob-offset: 3px;
   border: 1px solid $line;
   border-radius: $radius-pill;
   background: $surface-raised;
+  transition: border-color 0.2s;
 }
 
 .knob {
