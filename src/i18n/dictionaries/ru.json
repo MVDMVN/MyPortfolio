@@ -14,10 +14,7 @@
     "eyebrow": "Technical Integrator · удалённо",
     "title": "Технический интегратор с опытом фронтенда",
     "lead": "Собираю офферы, настраиваю трекеры и постбеки, быстро разбираюсь в новых инструментах.",
-    "facts": [
-      "В арбитраже с 2024 года, крипто-офферы",
-      "Фронтенд с 2019 года: React, Next.js"
-    ],
+    "facts": ["В арбитраже с 2024 года, крипто-офферы", "Фронтенд с 2019 года: React, Next.js"],
     "primaryAction": "Написать в Telegram",
     "secondaryAction": "Скачать CV",
     "logTitle": "postback.log · пример"
@@ -29,49 +26,27 @@
       {
         "title": "Оффер",
         "text": "Собираю страницы офферов на чистых HTML, CSS и JavaScript, когда нужна лёгкая и быстрая страница, или SPA на React / Next.js, когда в оффере есть логика. С ИИ-инструментами получается быстрее.",
-        "tools": [
-          "HTML / CSS / JS",
-          "React",
-          "Next.js",
-          "ИИ-инструменты"
-        ]
+        "tools": ["HTML / CSS / JS", "React", "Next.js", "ИИ-инструменты"]
       },
       {
         "title": "Трекер",
         "text": "Подключаю оффер к Keitaro, Binom или AiO: кампании, офферы, распределение трафика, кастомные макросы и S2S-постбеки между трекером, сетью и рекламным кабинетом.",
-        "tools": [
-          "Keitaro",
-          "Binom",
-          "AiO"
-        ]
+        "tools": ["Keitaro", "Binom", "AiO"]
       },
       {
         "title": "Отправка лида",
         "text": "Лид уходит туда, где он нужен: Meta Pixel и Conversions API с дедупликацией по event_id, конверсии Google Ads или CRM со своей бизнес-логикой.",
-        "tools": [
-          "Meta Pixel",
-          "CAPI",
-          "Google Ads",
-          "CRM"
-        ]
+        "tools": ["Meta Pixel", "CAPI", "Google Ads", "CRM"]
       },
       {
         "title": "Поиск ошибок",
         "text": "Когда цифры не сходятся, прохожу цепочку по шагам: DevTools в браузере, логи трекера, ответы на постбеки, проверка гео и клоаки в Octo Browser с прокси.",
-        "tools": [
-          "DevTools",
-          "Octo Browser",
-          "Прокси"
-        ]
+        "tools": ["DevTools", "Octo Browser", "Прокси"]
       },
       {
         "title": "Новые инструменты",
         "text": "Запускаю новый инструмент по документации. У AiO не было публичного API для рутины, поэтому я разобрал внутренний API через DevTools и написал скрипты для массовой загрузки вайтов и правил распределения.",
-        "tools": [
-          "Документация API",
-          "DevTools",
-          "Скрипты"
-        ]
+        "tools": ["Документация API", "DevTools", "Скрипты"]
       }
     ]
   },
@@ -81,7 +56,7 @@
       {
         "company": "Арбитражная компания (NDA)",
         "role": "Frontend & Integration Developer",
-        "period": "окт 2024 — сейчас",
+        "period": "окт 2024 - сейчас",
         "points": [
           "Трекеры, S2S-постбеки, Facebook CAPI на VPS, отправка лидов в CRM",
           "Подключение доменов к Cloudflare пачкой через скрипт: зона, A-запись, делегирование NS, SSL",
@@ -91,7 +66,7 @@
       {
         "company": "StarNavi (MagicHow)",
         "role": "React Developer",
-        "period": "дек 2022 — дек 2023",
+        "period": "дек 2022 - дек 2023",
         "points": [
           "Веб-приложение, которое превращает запись экрана в пошаговую инструкцию: Next.js, React Query, React Hook Form",
           "Приложение на React Native для отдельного проекта"
@@ -100,18 +75,14 @@
       {
         "company": "ASBIS (Breezy)",
         "role": "Frontend Developer",
-        "period": "апр 2022 — дек 2022",
-        "points": [
-          "Лендинги и вёрстка компонентов на Vue.js"
-        ]
+        "period": "апр 2022 - дек 2022",
+        "points": ["Лендинги и вёрстка компонентов на Vue.js"]
       },
       {
         "company": "Citrus.ua",
         "role": "Frontend Developer",
-        "period": "окт 2019 — янв 2022",
-        "points": [
-          "Компоненты в Storybook для React-версии магазина, промо-лендинги"
-        ]
+        "period": "окт 2019 - янв 2022",
+        "points": ["Компоненты в Storybook для React-версии магазина, промо-лендинги"]
       }
     ]
   },
@@ -134,26 +105,11 @@
       },
       {
         "title": "Инфраструктура",
-        "items": [
-          "Домены",
-          "Cloudflare DNS и SSL",
-          "VPS",
-          "Apache",
-          "SSH",
-          "Git"
-        ]
+        "items": ["Домены", "Cloudflare DNS и SSL", "VPS", "Apache", "SSH", "Git"]
       },
       {
         "title": "Фронтенд",
-        "items": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "React Query",
-          "SCSS",
-          "React Native"
-        ]
+        "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Query", "SCSS", "React Native"]
       }
     ]
   },
