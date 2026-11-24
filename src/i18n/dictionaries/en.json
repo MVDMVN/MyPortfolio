@@ -14,10 +14,7 @@
     "eyebrow": "Technical Integrator · Remote",
     "title": "Technical integrator with a frontend background",
     "lead": "I build offers, set up trackers and postbacks, and get up to speed with new tools quickly.",
-    "facts": [
-      "Affiliate marketing since 2024, crypto offers",
-      "Frontend since 2019: React, Next.js"
-    ],
+    "facts": ["Affiliate marketing since 2024, crypto offers", "Frontend since 2019: React, Next.js"],
     "primaryAction": "Message on Telegram",
     "secondaryAction": "Download CV",
     "logTitle": "postback.log · example"
@@ -29,49 +26,27 @@
       {
         "title": "Offer",
         "text": "I build offer pages in plain HTML, CSS and JavaScript when the page has to be light and fast, or as an SPA on React / Next.js when the offer needs logic. AI tools speed both up.",
-        "tools": [
-          "HTML / CSS / JS",
-          "React",
-          "Next.js",
-          "AI tools"
-        ]
+        "tools": ["HTML / CSS / JS", "React", "Next.js", "AI tools"]
       },
       {
         "title": "Tracker",
         "text": "I connect the offer to Keitaro, Binom or AiO: campaigns, offers, traffic distribution, custom macros and S2S postbacks between tracker, network and ad platform.",
-        "tools": [
-          "Keitaro",
-          "Binom",
-          "AiO"
-        ]
+        "tools": ["Keitaro", "Binom", "AiO"]
       },
       {
         "title": "Lead delivery",
         "text": "The lead goes where it is needed: Meta Pixel and Conversions API with event_id deduplication, Google Ads conversions, or a CRM with custom business logic.",
-        "tools": [
-          "Meta Pixel",
-          "CAPI",
-          "Google Ads",
-          "CRM"
-        ]
+        "tools": ["Meta Pixel", "CAPI", "Google Ads", "CRM"]
       },
       {
         "title": "Debugging",
         "text": "When numbers don't match, I trace the chain step by step: browser DevTools, tracker logs, postback responses, and geo or cloaking checks in Octo Browser with proxies.",
-        "tools": [
-          "DevTools",
-          "Octo Browser",
-          "Proxies"
-        ]
+        "tools": ["DevTools", "Octo Browser", "Proxies"]
       },
       {
         "title": "Learning new tools",
         "text": "I get a new tool working from its docs. When AiO had no public API for routine tasks, I studied its internal API in DevTools and scripted bulk white-page uploads and traffic rules.",
-        "tools": [
-          "API docs",
-          "DevTools",
-          "Scripts"
-        ]
+        "tools": ["API docs", "DevTools", "Scripts"]
       }
     ]
   },
@@ -79,7 +54,7 @@
     "title": "Experience",
     "jobs": [
       {
-        "company": "Affiliate marketing company (NDA)",
+        "company": "LeadAR",
         "role": "Frontend & Integration Developer",
         "period": "Oct 2024 – present",
         "points": [
@@ -101,17 +76,13 @@
         "company": "ASBIS (Breezy)",
         "role": "Frontend Developer",
         "period": "Apr 2022 – Dec 2022",
-        "points": [
-          "Landing pages and markup for Vue.js components"
-        ]
+        "points": ["Landing pages and markup for Vue.js components"]
       },
       {
         "company": "Citrus.ua",
         "role": "Frontend Developer",
         "period": "Oct 2019 – Jan 2022",
-        "points": [
-          "Storybook components for the React version of the store, promo landing pages"
-        ]
+        "points": ["Storybook components for the React version of the store, promo landing pages"]
       }
     ]
   },
@@ -134,26 +105,11 @@
       },
       {
         "title": "Infrastructure",
-        "items": [
-          "Domains",
-          "Cloudflare DNS & SSL",
-          "VPS",
-          "Apache",
-          "SSH",
-          "Git"
-        ]
+        "items": ["Domains", "Cloudflare DNS & SSL", "VPS", "Apache", "SSH", "Git"]
       },
       {
         "title": "Frontend",
-        "items": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "React Query",
-          "SCSS",
-          "React Native"
-        ]
+        "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Query", "SCSS", "React Native"]
       }
     ]
   },
